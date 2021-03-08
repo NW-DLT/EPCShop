@@ -1,0 +1,20 @@
+﻿<h1>Все сборки</h1>
+<div class="container">
+    <div class="row">
+        @{
+            foreach (var pc in Model.allPcs)
+            {
+                <div class="col-sm-4">
+                    <div class="card">
+                        <img src="@pc.img" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">@pc.Name</h5>
+                            <p class="card-text">@pc.Price.ToString("c")</p>
+                            <a href="#" class="btn btn-primary">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+</div>

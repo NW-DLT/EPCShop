@@ -1,0 +1,60 @@
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification 
+for details on configuring this project to bundle and minify static web assets. */
+body {
+    background: black;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner {
+    max-width: 1280px;
+    max-height: 720px;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 1080px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+.logo{
+    width: 40px;
+    padding-top:5px;
+}
+.kittylink-logo {
+    float: right;
+}
+
+.card {
+    background-color: darkgray;
+    max-width: 500px;
+    padding: 20px;
+}
+
+.card p {
+    color: black;
+}
+
+.card img{
+    max-width: 320px;
+}
