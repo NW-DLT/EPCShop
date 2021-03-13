@@ -9,10 +9,7 @@ namespace EPCShop.Data
 {
     public class AppDBContent : DbContext
     {
-        public AppDBContent(DbContextOptions<AppDBContent> options) 
-            :base(options)
-        {
-        }
+        public AppDBContent(DbContextOptions<AppDBContent> options) :base(options){}
         public DbSet<Pc> Pc { get; set; }
     }
 }

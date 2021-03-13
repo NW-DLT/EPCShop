@@ -38,6 +38,7 @@ namespace EPCShop
             app.UseStatusCodePages();
             app.UseStaticFiles();
             app.UseRouting();
+            app.UseDefaultFiles();
             app.UseEndpoints(endpoint =>
             {
                 endpoint.MapControllerRoute(name: "default", pattern: "{controller=Pcs}/{action=List}");
