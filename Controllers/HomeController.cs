@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using EPCShop.Data.Models;
 using EPCShop.Data;
 using System.Data.Entity;
+using EPCShop.Data.Interfaces;
+using EPCShop.ViewModels;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -15,11 +17,17 @@ namespace EPCShop.Controllers
     [ApiController]
     public class HomeController : ControllerBase
     {
-        // GET: api/<HomeController>
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<Pc>>> Get(AppDBContent db)
+        IAllPcs AllPcs;
+        public HomeController (IAllPcs allPcs)
         {
-            return await db.Pc.ToListAsync();
+            AllPcs = allPcs;
+        }
+
+        // GET: api/<HomeController>
+        [HttpGet(Name = "GetAllPcs")]
+        public IEnumerable<Pc> Get()
+        {
+            return AllPcs.GetPcs();
         }
 
         // GET api/<HomeController>/5

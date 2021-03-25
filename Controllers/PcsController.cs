@@ -21,7 +21,6 @@ namespace EPCShop.Controllers
         {
             ViewBag.Title = "Готовые сборки";
             PcsListViewModel obj = new PcsListViewModel();
-            obj.allPcs = _allPcs.Pcs;
             return View(obj);
         }
     }

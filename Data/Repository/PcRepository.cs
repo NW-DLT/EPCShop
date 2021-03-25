@@ -16,8 +16,9 @@ namespace EPCShop.Data.Repository
         {
             this.appDBContent = appDBContent;
         }
-        public IEnumerable<Pc> Pcs => appDBContent.Pc;
 
         public Pc getObjectPc(int PcID) => appDBContent.Pc.FirstOrDefault(p => p.id == PcID);
+
+        IEnumerable<Pc> IAllPcs.GetPcs() => appDBContent.Pc;
     }
 }

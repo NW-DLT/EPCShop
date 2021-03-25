@@ -8,7 +8,7 @@ namespace EPCShop.Data.Interfaces
 {
     public interface IAllPcs
     {
-        IEnumerable<Pc> Pcs { get; }
         Pc getObjectPc(int PcID);
+        IEnumerable<Pc> GetPcs();
     }
 }

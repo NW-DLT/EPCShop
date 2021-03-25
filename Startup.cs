@@ -8,7 +8,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using EPCShop.Data.Interfaces;
-using EPCShop.Data.Mocks;
 using Microsoft.Extensions.Configuration;
 using EPCShop.Data;
 using Microsoft.EntityFrameworkCore;
