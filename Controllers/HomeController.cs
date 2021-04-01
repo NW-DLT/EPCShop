@@ -30,32 +30,11 @@ namespace EPCShop.Controllers
             return AllPcs.GetPcs();
         }
 
-        // GET api/<HomeController>/5
+        // GET api/<HomeController>/1
         [HttpGet("{id}")]
-        public async Task<ActionResult<Pc>> Get(int id, AppDBContent db)
+        public ActionResult<Pc> Get(int id)
         {
-            Pc pc = await db.Pc.FirstOrDefaultAsync(x => x.id == id);
-            if (pc == null)
-                return NotFound();
-            return new ObjectResult(pc);
-        }
-
-        // POST api/<HomeController>
-        [HttpPost]
-        public void Post([FromBody] string value)
-        {
-        }
-
-        // PUT api/<HomeController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE api/<HomeController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
+            return AllPcs.getObjectPc(id);
         }
     }
 }

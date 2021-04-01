@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Рабочий\\source\\repos\\EPCShop\\EPCShop\\EPCShop.csproj": {}
+    "E:\\repos\\EPCShop\\EPCShop.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Рабочий\\source\\repos\\EPCShop\\EPCShop\\EPCShop.csproj": {
+    "E:\\repos\\EPCShop\\EPCShop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Рабочий\\source\\repos\\EPCShop\\EPCShop\\EPCShop.csproj",
+        "projectUniqueName": "E:\\repos\\EPCShop\\EPCShop.csproj",
         "projectName": "EPCShop",
-        "projectPath": "C:\\Users\\Рабочий\\source\\repos\\EPCShop\\EPCShop\\EPCShop.csproj",
-        "packagesPath": "C:\\Users\\Рабочий\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Рабочий\\source\\repos\\EPCShop\\EPCShop\\obj\\",
+        "projectPath": "E:\\repos\\EPCShop\\EPCShop.csproj",
+        "packagesPath": "C:\\Users\\Александр\\.nuget\\packages\\",
+        "outputPath": "E:\\repos\\EPCShop\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Рабочий\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Александр\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -61,17 +62,17 @@
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.0.3, )"
+              "version": "[5.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[5.0.3, )"
+              "version": "[5.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[5.0.3, )"
+              "version": "[5.0.4, )"
             }
           },
           "imports": [
@@ -92,7 +93,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
